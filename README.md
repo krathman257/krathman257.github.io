@@ -1,3 +1,3 @@
-*Project Blog*
+**Project Blog**
 
 This is my ReadMe
