@@ -33,6 +33,30 @@ github_username:  jekyll
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+        projects:
+                output: true
+
+# Front Matter Defaults
+defaults:
+        - scope:
+                path: ""
+                type: "projects"
+          values:
+                  layout: "project"
+        - scope:
+                path: ""
+                type: "posts"
+          values:
+                  layout: "post"
+        - scope:
+                path: ""
+          values:
+                  layout: "default"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
