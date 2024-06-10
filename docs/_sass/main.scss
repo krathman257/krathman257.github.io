@@ -1,3 +1,33 @@
-.current {
+.navbar {
+	text-align: center;
+}
+
+.navbarItem {
+	color: blue;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+html {
+	border: 15px ridge #707070;
+	margin: 10px;
+}
+
+body {
+	padding: 20px;
+	margin: 0px;
+}
+
+@include headings {
+	font-family: "Permanent Marker", sans-serif;
+	font-weight: 400;
+}
+
+p,a {
+	font-family: "Gloria Hallelujah", sans-serif;
+}
+
+h2 {
 	color: green;
+	text-decoration: underline;
 }
