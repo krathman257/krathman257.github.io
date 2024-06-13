@@ -9,11 +9,14 @@
 }
 
 html {
+	background-image: url("../images/background_wall.jpg");
+	background-size: 500px;
 	border: 15px ridge #707070;
 	margin: 10px;
 }
 
 body {
+	background: white;
 	padding: 20px;
 	margin: 0px;
 }
