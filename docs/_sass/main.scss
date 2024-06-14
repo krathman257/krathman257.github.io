@@ -9,16 +9,17 @@
 }
 
 html {
-	background-image: url("../images/background_wall.jpg");
-	background-size: 500px;
+	background-image: url("../images/background_wall.png");
 	border: 15px ridge #707070;
 	margin: 10px;
+	box-shadow: 5px 5px 15px;
 }
 
 body {
 	background: white;
 	padding: 20px;
 	margin: 0px;
+	box-shadow: inset 5px 5px 5px;
 }
 
 @include headings {
