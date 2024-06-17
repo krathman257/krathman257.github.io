@@ -3,9 +3,13 @@
 }
 
 .navbarItem {
-	color: blue;
-	margin-left: 5%;
-	margin-right: 5%;
+	@include navbarBase;
+}
+
+.navbarCurrentItem {
+	@include navbarBase;
+	border: 2px solid blue;
+	border-radius: 10px;
 }
 
 html {

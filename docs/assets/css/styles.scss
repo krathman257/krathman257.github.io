@@ -5,4 +5,11 @@
 		@content;
 	}
 }
+@mixin navbarBase {
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: blue;
+}
 @import "main";
