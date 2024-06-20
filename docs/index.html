@@ -2,15 +2,18 @@
 title: Home Page
 ---
 
-<h1>{{ "Hello World!" | downcase }}</h1>
-<h2>Header 2 test</h2>
+<h1>Kyle Rathman's Digital Whiteboard</h1>
+<h2>Combination Project Blog and Idea Storage Unit</h2>
 <p>Lorem ipsum, some more text. I mean, this is what text looks like. That's all I'm talking about. Right there. This is just a test, by the way, this text doesn't actually mean anything</p>
 <h2>Latest Posts</h2>
 <ul>
-	{% for post in site.posts limit:2 %}
+	{% for post in site.posts limit:10 %}
+	{% assign project = site.projects | where:'short_name', post.project | first %}
+	{% if project %}
 	<li>
-		<h3><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date:"%b %d, %Y" }}</a></h3>
+		<h3><a href="{{ post.url }}">{{ post.title }}</a> {% include dateFormat.html date=post.date %} - {{ project.name }}</h3>
 		{{ post.excerpt }}
 	</li>
+	{% endif %}
 	{% endfor %}
 </ul>

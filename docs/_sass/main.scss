@@ -31,11 +31,19 @@ body {
 	font-weight: 400;
 }
 
-p,a {
+p,a,li {
 	font-family: "Gloria Hallelujah", sans-serif;
 }
 
 h2 {
 	color: green;
 	text-decoration: underline;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 3px 3px 5px;
+	transform: 30deg;
 }
