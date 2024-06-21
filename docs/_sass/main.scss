@@ -9,21 +9,21 @@
 .navbarCurrentItem {
 	@include navbarBase;
 	border: 2px solid blue;
-	border-radius: 10px;
+	border-radius: 50px;
 }
 
 html {
 	background-image: url("../images/background_wall.png");
-	border: 15px ridge #707070;
-	margin: 10px;
-	box-shadow: 5px 5px 15px;
 }
 
 body {
 	background: white;
+	border: 15px ridge #707070;
 	padding: 20px;
-	margin: 0px;
-	box-shadow: inset 5px 5px 5px;
+	margin: 10px;
+	box-shadow: 
+		5px 5px 15px,
+		inset 5px 5px 5px;
 }
 
 @include headings {
@@ -38,12 +38,4 @@ p,a,li {
 h2 {
 	color: green;
 	text-decoration: underline;
-}
-
-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	box-shadow: 3px 3px 5px;
-	transform: 30deg;
 }

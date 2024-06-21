@@ -1,0 +1,13 @@
+<div class="imageContainer">
+	{% if include.caption %}
+	<div class="caption">
+		<p class="caption">{{ include.caption }}</p>
+	</div>
+	{% endif %}
+	<div class="image">
+		<img class="image" src="/assets/images/{{ include.image }}">
+		<span class="magnet">
+			<img class="magnet" src="/assets/images/magnet_red.png">
+		</span>
+	</div>
+</div>
