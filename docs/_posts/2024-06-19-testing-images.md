@@ -3,7 +3,7 @@ project: blog
 ---
 I'm using this post to test image placement and styling. This is basically just here as a testing ground.
 
-{% include image.html image="blog-testImage.jpg" caption="This is a test caption! They can be shorter, but the can be longer, too! Text goes here!" %}
+{% include image.html image="testImage.jpg" caption="This is a test caption! They can be shorter, but the can be longer, too! Text goes here!" %}
 
 Well, I had to use SOMETHING for the test image. Something tasteful, something nice.
 

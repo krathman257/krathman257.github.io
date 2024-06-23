@@ -5,9 +5,13 @@
 	</div>
 	{% endif %}
 	<div class="image">
-		<img class="image" src="/assets/images/{{ include.image }}">
+		{% if page.project %}
+		<img class="image" src="/assets/images/{{ page.project }}/{{ include.image }}">
+		{% else %}
+		<img class="image" src="/assets/images/{{ include.projectShortName }}/{{ include.image }}">
+		{% endif %}
 		<span class="magnet">
-			<img class="magnet" src="/assets/images/magnet_red.png">
+			<img class="magnet" src="/assets/images/SITE/magnet_red.png">
 		</span>
 	</div>
 </div>
