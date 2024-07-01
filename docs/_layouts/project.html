@@ -4,6 +4,11 @@ layout: default
 <h1>{{ page.name }}</h1>
 <h2>{{ page.position }}</h2>
 
+{% assign galleryPage = site.galleries | where: 'project', page.short_name | first %}
+{% if galleryPage %}
+<a href="{{ galleryPage.url }}">Gallery</a>
+{% endif %}
+
 {{ content }}
 
 <h2>Posts</h2>

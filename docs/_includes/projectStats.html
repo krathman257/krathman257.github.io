@@ -4,7 +4,7 @@
 	{% assign firstPost = projectPosts | sort:"date" | first %}
 	{% assign lastPost = projectPosts | sort:"date" | last %}
 	{% if projectPostsCount == 0 %}
-		<p>No posts yet, just an idea so far</p>
+		<p>No posts</p>
 	{% elsif projectPostsCount == 1 %}
 		<p>1 post on {% include dateFormat.html date=firstPost.date %}</p>
 	{% else %}

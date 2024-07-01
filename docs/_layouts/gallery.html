@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{% assign projectPage = site.projects | where: 'short_name', page.project | first %}
+<h1>{{ projectPage.name }} Gallery</h1>
+<a href="{{ projectPage.url }}">{{ projectPage.name }}</a>
+<div class="flexContainer">
+	{% assign imageUrl = 'images/' | append: page.project %} 
+	{% assign emptyGallery = true %}
+	{% for image in site.static_files %}
+		{% if image.path contains imageUrl %}
+			{% include imageGallery.html image=image.name %}
+			{% assign emptyGallery = false %}
+		{% endif %}
+	{% endfor %}
+	{% if emptyGallery %}
+	<p>No images in gallery</p>
+	{% endif %}
+</div>

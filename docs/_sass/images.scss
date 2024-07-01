@@ -1,10 +1,16 @@
-div.imageContainer {
+div.imagePostContainer {
 	position: relative;
 	display: block;
 	width: fit-content;
 	max-width: 40%;
 	margin: 0px 30px;
 	float: right;
+}
+
+div.imageGalleryContainer {
+	display: inline;
+	width: fit-content;
+	margin: 30px;
 }
 
 div.image {
@@ -20,6 +26,8 @@ span.magnet {
 
 img.image {
 	display: block;
+	max-height: 400px;
+	max-width: 400px;
 	margin-left: auto;
 	margin-right: auto;
 	box-shadow: 3px 3px 5px;

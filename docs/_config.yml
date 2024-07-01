@@ -40,6 +40,9 @@ plugins:
 collections:
         projects:
                 output: true
+        galleries:
+                output: true
+                permalink: /projects/:name/gallery
 
 # Front Matter Defaults
 defaults:
@@ -48,6 +51,11 @@ defaults:
                 type: "projects"
           values:
                   layout: "project"
+        - scope:
+                path: ""
+                type: "galleries"
+          values:
+                  layout: "gallery"
         - scope:
                 path: ""
                 type: "posts"
@@ -66,7 +74,8 @@ defaults:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+    - templates/
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

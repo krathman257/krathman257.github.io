@@ -12,6 +12,11 @@
 	border-radius: 50px;
 }
 
+.flexContainer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 html {
 	background-image: url("../images/SITE/background_wall.png");
 }
@@ -33,6 +38,10 @@ body {
 
 p,a,li {
 	font-family: "Gloria Hallelujah", sans-serif;
+}
+
+code {
+	background-color: #E0E0E0;
 }
 
 h2 {
