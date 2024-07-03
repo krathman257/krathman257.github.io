@@ -42,7 +42,7 @@ collections:
                 output: true
         galleries:
                 output: true
-                permalink: /projects/:name/gallery
+                permalink: /projects/:name/gallery.html
 
 # Front Matter Defaults
 defaults:
