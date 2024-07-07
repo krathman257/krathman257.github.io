@@ -16,7 +16,7 @@ The main `collection` on the blog is a collection of Projects. All posts and ima
 
 To make a new project, copy `projectTemplate.md` into `docs/_projects/` with a new name and a `.md` extension.
 
-There are two variables that need to be assigned values: `short_name` and `name`. `short_name` should be the same name as the file (this isn't required, but it keeps things intuitive), so `blog.md` should contain `short_name: blog`. `name` is the more human-readable name for the project, and should be something more descriptive (in this example, something like `name: Personal Project Blog`)
+There are three variables that need to be assigned values: `short_name`, `name`, and `github`. `short_name` should be the same name as the file (this isn't required, but it keeps things intuitive), so `blog.md` should contain `short_name: blog`. `name` is the more human-readable name for the project, and should be something more descriptive (in this example, something like `name: Personal Project Blog`). `github` is an optional variable, and should be a link to the relavent Github repository, if used.
 
 Any content, including Markdown-stylized text and images, to be shown on the main project page can be placed below the front matter.
 
@@ -46,7 +46,7 @@ To add images to a project, for showcasing both in the gallery and in posts, cre
 
 Images can be placed into posts with the following Liquid `include` tag:
 
-`{% include imagePost.html image="[IMAGE FILE]" caption="[TEXT] %}`
+`{% include imagePost.html image="[IMAGE FILE]" caption="[TEXT]" %}`
 
 The caption variable is optional. The command will automatically search in the folder in `docs/assets/images/` that has the same name as the `short_name` of the project associated with the post.
 

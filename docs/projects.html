@@ -5,7 +5,8 @@ title: Projects
 <h1>Projects</h1>
 
 <ul>
-	{% for project in site.projects %}
+	{% assign projectsSorted = site.projects | sort: "name" %}
+	{% for project in projectsSorted %}
 	<li>
 		<h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
 		{% include projectStats.html projectShortName=project.short_name %}
