@@ -8,9 +8,11 @@ title: Projects
 	{% assign projectsSorted = site.projects | sort: "name" %}
 	{% for project in projectsSorted %}
 	<li>
-		<h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
-		{% include projectStats.html projectShortName=project.short_name showSupp=true %}
-		<p>{{ project.excerpt }}</p>
+		<div class="flexContainer">
+			<h2 style="margin:0px 5px"><a href="{{ project.url }}">{{ project.name }}</a></h2>
+			{% include projectStats.html projectShortName=project.short_name showSupp=true %}
+		</div>
+		{{ project.excerpt }}
 	</li>
 	{% endfor %}
 </ul>

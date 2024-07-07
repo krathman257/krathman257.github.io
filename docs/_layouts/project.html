@@ -16,8 +16,10 @@ layout: default
 
 {{ content }}
 
-<h2>Posts</h2>
-{% include projectStats.html projectShortName=page.short_name %}
+<div class="flexContainer">
+	<h2 style="margin:0px 5px;">Posts</h2>
+	{% include projectStats.html projectShortName=page.short_name %}
+</div>
 <ul>
 	{% assign filtered_posts = site.posts | where: 'project', page.short_name %}
 	{% for post in filtered_posts %}

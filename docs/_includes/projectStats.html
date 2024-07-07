@@ -1,5 +1,5 @@
 {% if include.projectShortName %}
-<div style="display: flex;">
+<div>
 	{% assign project = site.projects | where:"short_name", include.projectShortName | first %}
 	{% assign gallery = site.galleries | where:"project", include.projectShortName | first %}
 	{% assign projectPosts = site.posts | where:"project", include.projectShortName %}
