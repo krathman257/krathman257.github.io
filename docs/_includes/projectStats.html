@@ -1,13 +1,21 @@
 {% if include.projectShortName %}
+<div style="display: flex;">
+	{% assign project = site.projects | where:"short_name", include.projectShortName | first %}
+	{% assign gallery = site.galleries | where:"project", include.projectShortName | first %}
 	{% assign projectPosts = site.posts | where:"project", include.projectShortName %}
 	{% assign projectPostsCount = projectPosts | size %}
 	{% assign firstPost = projectPosts | sort:"date" | first %}
 	{% assign lastPost = projectPosts | sort:"date" | last %}
 	{% if projectPostsCount == 0 %}
-		<p>No posts</p>
+		<p class="stat">No posts</p>
 	{% elsif projectPostsCount == 1 %}
-		<p>1 post on {% include dateFormat.html date=firstPost.date %}</p>
+		<p class="stat">1 post on {% include dateFormat.html date=firstPost.date %}</p>
 	{% else %}
-		<p>{{ projectPostsCount }} posts between {% include dateFormat.html date=firstPost.date %} and {% include dateFormat.html date=lastPost.date %}
+		<p class="stat">{{ projectPostsCount }} posts between {% include dateFormat.html date=firstPost.date %} and {% include dateFormat.html date=lastPost.date %}
 	{% endif %}
+	{% if include.showSupp %}
+		{% if gallery %}<p class="stat">Gallery</p>{% endif %}
+		{% if project.github %}<p class="stat">Github Repository</p>{% endif %}
+	{% endif %}
+</div>
 {% endif %}

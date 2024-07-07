@@ -45,6 +45,18 @@ p,a,li {
 	font-family: "Architects Daughter", sans-serif;
 }
 
+p.stat {
+	float: left;
+	display: inline;
+	border: 2px solid green;
+	border-radius: 25px;
+	color: green;
+	padding: 10px;
+	margin: 5px;
+	width: fit-content;
+	height: fit-content;
+}
+
 code {
 	background-color: #E8E8E8;
 	padding: 3px;

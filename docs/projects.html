@@ -9,7 +9,7 @@ title: Projects
 	{% for project in projectsSorted %}
 	<li>
 		<h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
-		{% include projectStats.html projectShortName=project.short_name %}
+		{% include projectStats.html projectShortName=project.short_name showSupp=true %}
 		<p>{{ project.excerpt }}</p>
 	</li>
 	{% endfor %}
