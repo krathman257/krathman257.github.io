@@ -52,4 +52,4 @@ The caption variable is optional. The command will automatically search in the f
 
 ## Links
 
-[Jekyll Documentation](jekyllrb.com/docs/)
+[Jekyll Documentation](http://jekyllrb.com/docs/)

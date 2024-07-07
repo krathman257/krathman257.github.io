@@ -4,12 +4,12 @@ layout: default
 <h1>{{ page.name }}</h1>
 <h2>{{ page.position }}</h2>
 
+{{ content }}
+
 {% assign galleryPage = site.galleries | where: 'project', page.short_name | first %}
 {% if galleryPage %}
-<a href="{{ galleryPage.url }}">Gallery</a>
+<h2><a href="{{ galleryPage.url }}">Gallery</a></h2>
 {% endif %}
-
-{{ content }}
 
 <h2>Posts</h2>
 {% include projectStats.html projectShortName=page.short_name %}
