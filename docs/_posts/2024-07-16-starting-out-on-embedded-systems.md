@@ -1,11 +1,11 @@
 ---
 project: embedded 
 ---
-I've recently started a journey into programming for embedded systems, and I hope it's a long and informative one. Saying it won't be easy the understatement of the epoch.
+I've recently started a journey into programming for embedded systems, and I hope it's a long and informative one. Saying it won't be easy is the understatement of the epoch.
 
-I've borrowed a book from the library, an O'Reilly book titled *Programming Embedded Systems* by Michael Barr. It's from 2006, so being almost 20 years old doesn't help it much, but I'm sure the concepts included are still valuable, and will be a good jumping-off point for future research. Certainly it's held up with technical documents I've found online so far.
+I've borrowed a book from the library, an O'Reilly book titled *Programming Embedded Systems* by Michael Barr. It's from 2006, so being almost 20 years old doesn't help it much, but I'm sure the concepts included are still valuable, and will be a good jumping-off point for future research. Certainly it's held up with the technical documents I've found online so far.
 
-The board the book recommends using is an Arcom VIPER-Lite board, which apparently came with an entire development kit. That'd be terrific if I was reading this in 2006, but that thing is $3,000 on eBay in the futuristic space year of 2024, so I guess I'll just have to make to with my futuristic space year technology. The book makes a point of saying that that board is only used as a reference point, anyway.
+The board the book recommends using is an Arcom VIPER-Lite board, which apparently came with an entire development kit. That'd be terrific if I was reading this in 2006, but that thing is $3,000 on eBay in the futuristic space year of 2024, so I guess I'll just have to make do with my futuristic space year technology. The book makes a point of saying that that board is only used as a reference point, anyway.
 
 In the vein that the best board is the board one already has, I'll be experimenting on two boards: an Elegoo Uno R3 (a Chinese-made Arduino) and a Raspberry Pi 4 Model B (the device what I'm typing this post on). I'll be examining the technical differences more as I go along, but so far, it looks like the Arduino is a lot less "roomy" than the ViperLite, and the Pi is much "roomier" (refering to processor clock speed, available memory, etc).
 
