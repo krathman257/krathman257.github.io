@@ -92,3 +92,7 @@ void delay_ms(int milliseconds){
 ```
 
 Another facet of the Arduino IDE is that it allows me to easily compile and run this code, something that'll be covered in the book's next chapter. If it provides a lower level way to do that, I might be able to set the registers directly using their addresses, as opposed to the Adruino-defined variables.
+
+## Update
+
+I figured out the proper alternative to Arduino's premade register variables! Like I said, I had the addresses right (well, mostly, the process documentation gave two addresses per register, depending on the ASM instruction used, so I knew it was one of two addresses). The issue is that the macro I was setting for `DDR_B` was simply `(0x24)`, which C was reading as a number as opposed to an address. By declaring the macro as `(*(int *)0x24)` (read as "value of the integer pointer at address `0x24`"), and doing the same for `PORT_B`, I can set the registers directly without worrying about Arduino's standards!
