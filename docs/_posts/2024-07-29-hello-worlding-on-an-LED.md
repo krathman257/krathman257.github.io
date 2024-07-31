@@ -41,7 +41,7 @@ The pin I needed was Pin 13, which was controlled by the 5th bits of the Port B 
 
 `ledToggle` is a simple `if/else` statement. The conditional is whether the `AND` of the data register and the bit mask is 0: if it's not (meaning the 5th bit in the data register is high), disable it with the line used above (`AND` the masks inverse). Otherwise, activate it (`OR` the mask).
 
-Making a custom `delay_ms` function was trickier. The book recommended a `while` loop iterating down the number of instructions it could complete in the given time (so milliseconds X instructions per millisecond), but that number needed to be `volitile`, or else the C compiler would optimize out the seemingly pointless loop. The issue is that the Arduino's 8-bit microcontroller wasn't liking that `volitile long` (a 32-bit data type). I ended up using Arduino's `millis` function to much the same effect, though I'm not sure the book meant for me to have access to a counter so early.
+Making a custom `delay_ms` function was trickier. The book recommended a `while` loop iterating down the number of instructions it could complete in the given time (so milliseconds X instructions per millisecond), but that number needed to be `volatile`, or else the C compiler would optimize out the seemingly pointless loop. The issue is that the Arduino's 8-bit microcontroller wasn't liking that `volatile long` (a 32-bit data type). I ended up using Arduino's `millis` function to much the same effect, though I'm not sure the book meant for me to have access to a counter so early.
 
 The complete code for the lower level solution is below (if I end up making a Git for this project, I'll add these there, as well):
 
@@ -96,3 +96,5 @@ Another facet of the Arduino IDE is that it allows me to easily compile and run 
 ## Update
 
 I figured out the proper alternative to Arduino's premade register variables! Like I said, I had the addresses right (well, mostly, the process documentation gave two addresses per register, depending on the ASM instruction used, so I knew it was one of two addresses). The issue is that the macro I was setting for `DDR_B` was simply `(0x24)`, which C was reading as a number as opposed to an address. By declaring the macro as `(*(int *)0x24)` (read as "value of the integer pointer at address `0x24`"), and doing the same for `PORT_B`, I can set the registers directly without worrying about Arduino's standards!
+
+I also figured out how to get `delay_ms` working without Arduino's `millis` function! The issue with the book's solution wasn't the `volatile` keyword, but that it was misinterpreting the `long` value when multiplying `int`s together. Defining `CYCLES_PER_MS` as `((long) 474)` instead of `(474)` fixed the function, and now the code is completely Arduino-independent.
