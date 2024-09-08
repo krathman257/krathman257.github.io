@@ -50,6 +50,14 @@ Images can be placed into posts with the following Liquid `include` tag:
 
 The caption variable is optional. The command will automatically search in the folder in `docs/assets/images/` that has the same name as the `short_name` of the project associated with the post.
 
+## Testing
+
+Any added pages can be tested before pushing the changes to Github. This can be done on any computer with `bundle` and `jekyll` installed (I've only tried it on Linux, Windows syntax may vary). Run the following terminal command from the website's home directory (in this case, inside `/docs`):
+
+`bundle exec jekyll serve --livereload`
+
+The website will be hosted at `localhost:4000`. The `--livereload` flag automatically refreshes the browser once Jekyll detects a newly saved file and has finished rendering any changes.
+
 ## Links
 
 [Jekyll Documentation](http://jekyllrb.com/docs/)

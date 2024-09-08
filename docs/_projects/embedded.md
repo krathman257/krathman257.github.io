@@ -7,3 +7,8 @@ I'm experimenting with writing software for embedded systems. Since I'm just sta
 I'll be working with two boards:
 - An Elegoo (see: Arduino) Uno R3
 - A Raspberry Pi 4 Model B
+
+### Important Links
+
+- [Arduino Uno R3 Documentation Hub](http://docs.arduino.cc/hardware/uno-rev3/)
+- [ATmega328P Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf)
