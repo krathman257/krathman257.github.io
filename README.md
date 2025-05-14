@@ -61,3 +61,5 @@ The website will be hosted at `localhost:4000`. The `--livereload` flag automati
 ## Links
 
 [Jekyll Documentation](http://jekyllrb.com/docs/)
+
+[Markdown Syntax](https://www.markdownguide.org/basic-syntax)
