@@ -9,3 +9,8 @@ Smart TVs are too smart for their own good. Poor things, they don't know how blo
 I've got a laptop, all but worthless. I mean, it still works, but watching it try to boot up Windows 10 is like watching Thomas Parnell's Pitch Drop Experiment. It does, however, have a CD drive, and I'm sure it would to better with a lighter-weight operating system.
 
 That sucker's getting turned into a DVD player.
+
+## Important Links
+
+- [Arch Linux Wiki](http://wiki.archlinux.org)
+- [Arch Linux Wiki - Installation Guide](http://wiki.archlinux.org/title/Installation_guide)
