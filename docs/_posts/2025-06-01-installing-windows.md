@@ -11,7 +11,7 @@ I've set up a tiling window manager called Ratpoison to allow me to switch betwe
 
 Some minor configuration was needed. I added settings to X11 via `~/.Xresources` to, for example, change the text from black-on-white to white-on-black (dark mode FTW). I'm sure a lot of hotkeys are going to need to get changed around in Ratpoison, too, especially when I add the remote control.
 
-## The Audio/Visual Experience
+## The Audio / Visual Experience
 
 I have all three methods of watching videos that I want to implement working. I'm using Firefox for Youtube videos and VLC for MP4 files and DVDs. Initially, audio wasn't playing properly, but once I set up the PulseAudio package, I could control the sound levels with the `pavucontrol` GUI. I'll likely need to find the right terminal commands to adjust volume at some point, since the GUI is designed for a mouse. The same goes for Firefox and VLC, actually; both work fine with a mouse, but a remote control is closer to a keyboard, and I'll have to map the buttons to terminal commands and button presses, I'd imagine.
 
