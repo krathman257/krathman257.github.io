@@ -45,4 +45,3 @@ The package itself is early-2000s-old, and depends on older versions of various 
 File System Visualizer is just that, however, a visualizer. It can't actually run the files selected. Part of my Far Future TODO for this project may be to write a simple OpenGL GUI to emulate Jurassic Park's file navigator, but for now I'll be happy to get something feature complete.
 
 Solving labyrinthine computer problems can be exhausting as it is, but at least I don't have to do it while velociraptors are breaking the door down.
----
