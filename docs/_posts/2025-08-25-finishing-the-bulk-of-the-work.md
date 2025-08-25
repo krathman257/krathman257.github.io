@@ -31,6 +31,6 @@ Now that I've got ArchLinux more or less configured how I want it, my next move 
 
 I won't be doing it from scratch, though. I'm going to copy a few config files and other things (including the Dapvop menu script, natch) over to the USB, so I won't need to reconfigure *everything*. I might have to bounce back and forth between Dapvop Alpha nd the USB installation before I get everything right (who needs virtual machines?), but here's a cursory list of the packages I'm using in the final configuration (there may be more I'm forgetting, I'll make sure to note those in my next post):
 
-`e2fsprongs`, `ntfs-3g`, `sof-firmware`, `vim`, `man-db`, `man-pages`, `texinfo`, `xorg`, `ratpoison` (AUR), `pavucontrol`, `vlc`, `firefox`, `firefox-ublock-origin`, `dialog`, `samba`, `flirc-bin` (AUR), `networkmanager`, `wsdd`, `ufw`
+`e2fsprogs`, `ntfs-3g`, `sof-firmware`, `vim`, `man-db`, `man-pages`, `texinfo`, `xorg`, `ratpoison` (AUR), `pavucontrol`, `vlc`, `firefox`, `firefox-ublock-origin`, `dialog`, `samba`, `flirc-bin` (AUR), `networkmanager`, `wsdd`, `ufw`
 
 `df -h` lists my root directory at 8.9 GB, we'll have to see how that changes in the fresh configuration.
