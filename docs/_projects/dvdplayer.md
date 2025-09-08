@@ -19,7 +19,7 @@ The Dapvop is completed. It runs off of a USB drive and can play DVDs, video fil
 
 As I was developing the Dapvop, I came across Home Theater PCs, or HTPCs. A lot of the software they mention is essentially exactly what I was looking for, but by the time I found them, I was too invested in making my pile of Bash and jank. I'll leave some links down below in the Important Links section for posterity, because some of the programs mentioned, like Kodi, might be better solutions if I end up wanted to improve this, so it can be a better device, as opposed to half-learning experience, half-actual solution.
 
-### Long Term TODO
+## Long Term TODO
 
 These are just one or two bits of jank I might want to focus on if I ever come back to this project.
 
