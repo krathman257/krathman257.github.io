@@ -28,6 +28,7 @@ These are just one or two bits of jank I might want to focus on if I ever come b
 - The laptop currently refuses to wake from sleep if the lid is closed. As far as I've seen, it's a hardware limitation of the laptop model, but if I feel like banging my head against a brick wall of a problem, that one's ripe for the picking.
 - Many modern movies have a music-too-loud-voices-too-soft problem. This may be fixable using VLC's many options. Explore?
 - `dialog`'s file selector is confusing to navigate. Find an alternative, or at least a better control scheme.
+- Some of the packages I chose, Firefox and VLC specifically, I chose since I was more familiar with them. However, there might be more light-weight, simpler solutions. Look into bringing the Linux root directory size down from 5.1GB.
 
 ## Important Links
 
